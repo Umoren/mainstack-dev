@@ -129,7 +129,7 @@ const LayoutComponent: React.FC<LayoutComponentProps> = ({ children }) => {
                                                     src={item.icon} alt="user mainstack"
                                                     className="w-[14px] h-[14px]   transition duration-75"
                                                 />
-                                                <span className="ml-3 text-sm text-gray-400"> {item.label} </span>
+                                                <span className="ml-3 text-sm text-ms-gray-400"> {item.label} </span>
                                             </a>
                                         </li>
                                     ))}

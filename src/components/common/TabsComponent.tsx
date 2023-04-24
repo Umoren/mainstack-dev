@@ -5,14 +5,13 @@ type TabOption = {
     value: number;
 };
 
-
 const tabOptions: TabOption[] = [
-    { label: '1 day', value: 1 },
-    { label: '3 days', value: 3 },
-    { label: '7 days', value: 7 },
-    { label: '30 days', value: 30 },
-    { label: 'All time', value: -1 },
-    { label: 'Custom date', value: 0 },
+    { label: '1 Day', value: 1 },
+    { label: '3 Days', value: 3 },
+    { label: '7 Days', value: 7 },
+    { label: '30 Days', value: 30 },
+    { label: 'All Time', value: -1 },
+    { label: 'Custom Date', value: 0 },
 ];
 
 const TabsComponent: React.FC = () => {
@@ -28,19 +27,14 @@ const TabsComponent: React.FC = () => {
                     <button
                         key={option.value}
                         className={`px-4  py-2  rounded-full ${activeTab === option.value
-                            ? 'bg-blue-500 text-white'
-                            : 'bg-gray-200 text-gray-800'
+                            ? 'bg-[#FFEEE6] text-ms-orange border border-ms-orange focus:outline-none'
+                            : 'bg-white text-ms-gray-500 text-sm border border-[#EFF1F6]'
                             }`}
                         onClick={() => handleTabClick(option.value)}
                     >
                         {option.label}
                     </button>
                 ))}
-            </div>
-
-            <div>
-                <p>Selected day: {activeTab === -1 ? 'All time' : activeTab}</p>
-                {/* <pre>{JSON.stringify(chartData, null, 2)}</pre> */}
             </div>
         </div>
     )
