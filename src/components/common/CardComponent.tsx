@@ -17,6 +17,8 @@ const CardComponent: React.FC<CardComponentProps> = ({ title, sources }) => {
     const chartRef = useRef<HTMLDivElement>(null);
     const [colors, setColors] = useState<string[]>([]);
 
+
+
     useEffect(() => {
         if (chartRef.current) {
             const chart = echarts.init(chartRef.current);

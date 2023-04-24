@@ -23,6 +23,21 @@ const LineChartComponent: React.FC = () => {
     const chartRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
+        const handleResize = () => {
+            if (chartRef.current) {
+                const chart: any = echarts.getInstanceByDom(chartRef.current);
+                chart.resize();
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
         if (chartRef.current) {
             const chart = echarts.init(chartRef.current);
             const xAxisData = Object.keys(graphData);
@@ -40,6 +55,7 @@ const LineChartComponent: React.FC = () => {
                     boundaryGap: false,
                     data: xAxisData,
                     axisLabel: {
+                        fontSize: window.innerWidth < 768 ? 10 : 12,
                         formatter: (value: string) => {
                             const date = new Date(value);
                             const day = date.getDate();
@@ -65,6 +81,7 @@ const LineChartComponent: React.FC = () => {
                         },
                     },
                     axisLabel: {
+                        fontSize: window.innerWidth < 768 ? 10 : 12,
                         formatter: (value: number) => {
                             return value.toString();
                         },
@@ -95,7 +112,7 @@ const LineChartComponent: React.FC = () => {
         }
     }, []);
 
-    return <div ref={chartRef} style={{ width: '100%', height: '400px' }} />;
+    return <div ref={chartRef} style={{ width: '100%', height: window.innerWidth < 768 ? '300px' : '400px' }} />;
 };
 
 export default LineChartComponent;

@@ -37,10 +37,10 @@ const LayoutComponent: React.FC<LayoutComponentProps> = ({ children }) => {
         setIsMenuOpen(!isMenuOpen);
     };
     return (
-        <main className="aspect-auto container px-12 box-border overscroll-auto">
+        <main className="container px-12 box-border overscroll-auto sm:w-11/12">
             {/* Navbar */}
 
-            <nav className="fixed top-0  left-[20.65rem] z-50 w-[77%] bg-white">
+            <nav className="fixed top-0 left-0 z-50 w-full sm:left-[20.65rem] sm:w-[77%] bg-white">
                 <div className="px-12 py-3">
                     <h3 className="text-[20px] font-semibold leading-6 text-ms-black"> Dashboard </h3>
                 </div>
@@ -48,7 +48,7 @@ const LayoutComponent: React.FC<LayoutComponentProps> = ({ children }) => {
 
             {/* Sidebar */}
             <aside
-                className="fixed top-0 left-0 z-40 w-[23%] border-r border-[#EFF1F6] h-screen transition-transform -translate-x-full sm:translate-x-0"
+                className="fixed top-0 left-0 z-40 w-full sm:w-[23%] border-r border-[#EFF1F6] h-screen transition-transform -translate-x-full sm:translate-x-0"
                 aria-label="Sidebar"
             >
                 <div className="px-12 py-6">
