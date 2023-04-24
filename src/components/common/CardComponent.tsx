@@ -83,7 +83,7 @@ const CardComponent: React.FC<CardComponentProps> = ({ title, sources }) => {
                                     </div>
                                     <div className="flex min-w-0 space-x-2">
                                         <p className="text-sm font-medium text-gray-900">{item.label}</p>
-                                        <p className="text-sm text-gray-500">{item.value}%</p>
+                                        <p className="text-sm font-semibold text-gray-500">{item.value}%</p>
                                     </div>
                                     <div className="flex-shrink-0">
                                         {/* Use a colored circle as the legend item */}
