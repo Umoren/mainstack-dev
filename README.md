@@ -37,7 +37,10 @@ I integrated storybook to create an interactive documentation for the components
 
 The reusable component in this project were the `CardComponent` and `TabsComponent`, so i created stories for them. 
 
-View it here: [Card Component Story](https://6447defcd304575e2d4f9558-uuxukeobxz.chromatic.com/?path=/docs/card--docs)
+View it here: 
+[Card Component Story](https://6447defcd304575e2d4f9558-uuxukeobxz.chromatic.com/?path=/docs/card--docs)
+
+[Tabs Component Story](https://6447defcd304575e2d4f9558-ymavaxfrgh.chromatic.com/?path=/docs/tabs--docs)
 
 ### ScreenCapture
 [![UI Documentation](https://res.cloudinary.com/marcomontalbano/image/upload/v1682433987/video_to_markdown/images/video--9c6de79d8c257a75ab48db65f77dd253-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://res.cloudinary.com/sammy365/video/upload/v1682433958/storybook_oqvogo.webm "UI Documentation")
