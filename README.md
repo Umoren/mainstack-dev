@@ -5,6 +5,8 @@ This is a sample project created using create-react-app. The project uses the fo
 - TypeScript
 - TailwindCSS
 - ECharts
+- Jest
+- Storybook
 
 ## Installation
 To install and run the project, clone the repository and run the following commands:
@@ -27,6 +29,19 @@ yarn test
 
 ##### TabsComponent test
 ![tabscomponent](public/screenshots/test2.png)
+
+
+## UI Components and Documentation
+
+I integrated storybook to create an interactive documentation for the components, showcasing different states, variations, and usage examples.
+
+The reusable component in this project was the `CardComponent`, so i created a story for it. 
+
+View it here: [Card Component Story](https://6447defcd304575e2d4f9558-uuxukeobxz.chromatic.com/?path=/docs/card--docs)
+
+### ScreenCapture
+[![UI Documentation](https://res.cloudinary.com/marcomontalbano/image/upload/v1682433987/video_to_markdown/images/video--9c6de79d8c257a75ab48db65f77dd253-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://res.cloudinary.com/sammy365/video/upload/v1682433958/storybook_oqvogo.webm "UI Documentation")
+
 
 ## Preview
 
