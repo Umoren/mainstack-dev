@@ -8,7 +8,7 @@ type Source = {
     icon: string;
 }
 
-type CardComponentProps = {
+export interface CardComponentProps {
     title: string;
     sources: Source[];
 };
