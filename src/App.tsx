@@ -3,8 +3,18 @@ import TabsComponent from "./components/common/TabsComponent";
 import LayoutComponent from "./components/layout/LayoutComponent";
 import CardComponent from "./components/common/CardComponent";
 import { top_locations, top_sources } from "./components/common/sourcesData";
+import { useState } from "react";
+import { tabOptions } from "./components/common/TabsComponent";
 
 function App() {
+  const [activeTab, setActiveTab] = useState<number>(-1);
+
+  const handleTabClick = (value: number) => {
+    setActiveTab(value);
+  };
+
+  const selectedTabLabel = tabOptions.find((option) => option.value === activeTab)?.label;
+
   return (
     <>
       <LayoutComponent>
@@ -21,14 +31,14 @@ function App() {
           </section>
 
           <section className="md:px-12 py-6">
-            <TabsComponent />
+            <TabsComponent activeTab={activeTab} onTabClick={handleTabClick} />
           </section>
 
           <section className="md:mx-12 pt-6 pb-3 border border-[#EFF1F6] rounded-lg md:w-[90%]">
             <div className="flex justify-between items-center mx-6 md:mx-12">
               <div>
                 <h3 className="text-lg text-black"> Page Views</h3>
-                <p className="text-sm text-ms-gray-400 pt-1"> All time </p>
+                <p className="text-sm text-ms-gray-400 pt-1">{selectedTabLabel}</p>
               </div>
 
               <div>
