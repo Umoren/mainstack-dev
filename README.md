@@ -46,10 +46,8 @@ View it here: [Card Component Story](https://6447defcd304575e2d4f9558-uuxukeobxz
 ## Preview
 
 ### Desktop View
-![Image](public/screenshots/screencapture.png);
+![Image](public/screenshots/screencapture.png)
 
-### Mobile View
-![Mobile View](public/screenshots/mobilescreen.png);
+- [Mobile View](https://github.com/Umoren/mainstack-dev/blob/master/public/screenshots/mobilescreen.png)
 
-### Sidebar
-![Mobile Sidebar](public/screenshots/mobile2.png);
+- [Mobile Sidebar](public/screenshots/mobile2.png)
