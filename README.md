@@ -25,4 +25,11 @@ yarn test
 
 ## Preview
 
-![Image](public/screencapture.png);
+### Desktop View
+![Image](public/screenshots/screencapture.png);
+
+### Mobile View
+![Mobile View](public/screenshots/mobilescreen.png);
+
+### Sidebar
+![Mobile Sidebar](public/screenshots/mobile2.png);
