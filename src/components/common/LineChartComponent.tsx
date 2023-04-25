@@ -1,4 +1,3 @@
-// components/GraphComponent.tsx
 import { useRef, useEffect } from 'react';
 import * as echarts from 'echarts';
 

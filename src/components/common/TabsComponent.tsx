@@ -28,7 +28,7 @@ const TabsComponent: React.FC = () => {
                         key={option.value}
                         className={`px-3 py-1 md:px-4 md:py-2 mb-2 sm:mb-0 rounded-full ${activeTab === option.value
                             ? "bg-[#FFEEE6] text-ms-orange border font-semibold text-xs border-ms-orange focus:outline-none"
-                            : "bg-white text-ms-gray-500 font-semibold text-xs md:text-sm border border-[#EFF1F6]"
+                            : "bg-white text-ms-gray-500 font-semibold text-xs border border-[#EFF1F6]"
                             }`}
                         onClick={() => handleTabClick(option.value)}
                     >

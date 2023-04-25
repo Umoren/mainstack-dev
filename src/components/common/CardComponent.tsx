@@ -62,7 +62,7 @@ const CardComponent: React.FC<CardComponentProps> = ({ title, sources }) => {
 
     return (
 
-        <div className="w-full max-w-[480px] p-4 bg-white shadow sm:p-8 border border-[#EFF1F6] rounded-lg my-8">
+        <div className="w-full max-w-[480px] p-4 bg-white sm:p-8 border border-[#EFF1F6] rounded-lg my-8">
             <div className="flex items-center justify-between mb-4">
                 <h5 className="text-ms-black text-lg ">{title}</h5>
                 <a href="/#" className="text-xs md:text-sm text-ms-orange">
