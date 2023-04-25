@@ -35,7 +35,7 @@ yarn test
 
 I integrated storybook to create an interactive documentation for the components, showcasing different states, variations, and usage examples.
 
-The reusable component in this project was the `CardComponent`, so i created a story for it. 
+The reusable component in this project were the `CardComponent` and `TabsComponent`, so i created stories for them. 
 
 View it here: [Card Component Story](https://6447defcd304575e2d4f9558-uuxukeobxz.chromatic.com/?path=/docs/card--docs)
 
