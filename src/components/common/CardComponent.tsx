@@ -92,7 +92,6 @@ const CardComponent: React.FC<CardComponentProps> = ({ title, sources }) => {
                                                 width: '10px',
                                                 height: '10px',
                                                 borderRadius: '50%',
-                                                marginLeft: '3px',
                                                 backgroundColor: colors[index] || '',
                                             }}
                                         ></div>

@@ -22,6 +22,11 @@ To run tests, run the following command:
 ```bash
 yarn test
 ```
+##### LineChartComponent test
+![linechart](public/screenshots/test1.png)
+
+##### TabsComponent test
+![tabscomponent](public/screenshots/test2.png)
 
 ## Preview
 
