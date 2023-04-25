@@ -71,19 +71,19 @@ const CardComponent: React.FC<CardComponentProps> = ({ title, sources }) => {
             </div>
 
 
-            <div className="flex items-center flex-row-reverse">
-                <div ref={chartRef} style={{ width: '50%', height: '200px' }} />
+            <div className="flex items-center justify-between w-full flex-row-reverse">
+                <div ref={chartRef} style={{ width: '50%', height: '200px' }} className='ml-6 md:ml-0' />
                 <ul className="w-1/2">
                     {sources &&
                         sources.map((item, index) => (
                             <li className="py-2 flex" key={index}>
-                                <div className="flex items-center space-x-4">
+                                <div className="flex items-center space-x-2 md:space-x-4">
                                     <div className="flex-shrink-0">
                                         <img className="w-5 h-4 rounded-full" src={item.icon} alt={item.label} />
                                     </div>
-                                    <div className="flex min-w-0 space-x-2">
-                                        <p className="text-sm font-medium text-gray-900">{item.label}</p>
-                                        <p className="text-sm font-semibold text-ms-black">{item.value}%</p>
+                                    <div className="flex min-w-0 space-x-1 md:space-x-2">
+                                        <p className="text-xs  md:text-sm  font-medium text-gray-900 truncate">{item.label}</p>
+                                        <p className="text-xs md:text-sm font-semibold text-ms-black">{item.value}%</p>
                                     </div>
                                     <div className="flex-shrink-0">
                                         {/* Use a colored circle as the legend item */}
@@ -92,6 +92,7 @@ const CardComponent: React.FC<CardComponentProps> = ({ title, sources }) => {
                                                 width: '10px',
                                                 height: '10px',
                                                 borderRadius: '50%',
+                                                marginLeft: '3px',
                                                 backgroundColor: colors[index] || '',
                                             }}
                                         ></div>

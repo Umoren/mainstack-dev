@@ -22,13 +22,13 @@ const TabsComponent: React.FC = () => {
     };
     return (
         <div>
-            <div className="flex flex-wrap sm:flex-nowrap space-x-4">
+            <div className="flex flex-wrap sm:flex-nowrap gap-2 md:gap-x-4">
                 {tabOptions.map((option) => (
                     <button
                         key={option.value}
                         className={`px-4 py-2 mb-2 sm:mb-0 rounded-full ${activeTab === option.value
-                                ? "bg-[#FFEEE6] text-ms-orange border border-ms-orange focus:outline-none"
-                                : "bg-white text-ms-gray-500 text-sm border border-[#EFF1F6]"
+                            ? "bg-[#FFEEE6] text-ms-orange border border-ms-orange focus:outline-none"
+                            : "bg-white text-ms-gray-500 text-sm border border-[#EFF1F6]"
                             }`}
                         onClick={() => handleTabClick(option.value)}
                     >
