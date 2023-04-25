@@ -1,5 +1,5 @@
 # Mainstack Dev Project
-This is a sample project created using create-react-app. The project uses the following technologies:
+This project was created using create-react-app. The project uses the following technologies:
 
 - React
 - TypeScript
@@ -50,6 +50,7 @@ View it here: [Card Component Story](https://6447defcd304575e2d4f9558-uuxukeobxz
 
 ### Mobile View
 ![Mobile View](public/screenshots/mobilescreen.png);
+
 
 ### Sidebar
 ![Mobile Sidebar](public/screenshots/mobile2.png);
