@@ -9,7 +9,7 @@ const meta: Meta<typeof CardComponent> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof CardComponent>;
+type Story = StoryObj<CardComponentProps>;
 
 
 export const Card: Story = {
