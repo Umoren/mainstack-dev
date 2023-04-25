@@ -65,19 +65,19 @@ const CardComponent: React.FC<CardComponentProps> = ({ title, sources }) => {
         <div className="w-full max-w-[480px] p-4 bg-white shadow sm:p-8 border border-[#EFF1F6] rounded-lg my-8">
             <div className="flex items-center justify-between mb-4">
                 <h5 className="text-ms-black text-lg ">{title}</h5>
-                <a href="/#" className="text-sm text-ms-orange">
+                <a href="/#" className="text-xs md:text-sm text-ms-orange">
                     View full reports
                 </a>
             </div>
 
 
             <div className="flex items-center justify-between w-full flex-row-reverse">
-                <div ref={chartRef} style={{ width: '50%', height: '200px' }} className='ml-6 md:ml-0' />
+                <div ref={chartRef} style={{ width: '50%', height: '200px' }} className='ml-6' />
                 <ul className="w-1/2">
                     {sources &&
                         sources.map((item, index) => (
                             <li className="py-2 flex" key={index}>
-                                <div className="flex items-center space-x-2 md:space-x-4">
+                                <div className="flex items-center gap-x-2 md:space-x-4">
                                     <div className="flex-shrink-0">
                                         <img className="w-5 h-4 rounded-full" src={item.icon} alt={item.label} />
                                     </div>

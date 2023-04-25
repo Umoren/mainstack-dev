@@ -16,7 +16,7 @@ function App() {
             </div>
 
             <div>
-              <a href="/#" className="text-ms-orange text-sm"> View analytics </a>
+              <a href="/#" className="text-ms-orange text-xs md:text-sm"> View analytics </a>
             </div>
           </section>
 
